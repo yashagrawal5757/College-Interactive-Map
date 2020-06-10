@@ -6,7 +6,7 @@ This project aims at building a website for the new students and visitors of our
 </p>
 
 
-Running the Project:
+**Running the Project:**
 - Click on the clone/download button and download it as zip.
 - Extract the zip by right clicking and extract it to your preferred location
-- Double click home.html file.
+- Double click **home.html** file.
