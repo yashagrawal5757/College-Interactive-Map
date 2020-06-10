@@ -1,0 +1,241 @@
+
+
+<!DOCTYPE html>
+<html lang="en" >
+<!--Menu CSS IMPORT-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- MAIN PROGRAM-->
+<head>
+      <meta charset="UTF-8">
+      <title>DSCE Maps  </title>
+      <link rel="stylesheet" href="style.css">
+     
+       <!--<script  src="index.js"></script>-->
+	   
+	   <!-- Add jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!-- Add maphighlight plugin -->
+<script type="text/javascript" src="jquery.maphilight.min.js"></script>
+
+<!-- Activate maphighlight plugin -->
+<script type="text/javascript" src="script.js"></script>
+
+
+</head>
+
+<body>
+
+<!--MENU Creation-->
+<div class="icon-bar">
+    <a class="active" href="http://dscemap.ml/"><i class="fa fa-home"> Home</i></a>
+    <a class="active" href="contacts.html"><i class="fa fa-envelope"> Contact Details </i></a>
+     <a class="active" href="https://dayanandasagar.edu/"
+        target="popup"
+        onclick="window.open('https://dayanandasagar.edu/','popup','width=600,height=600'); return false;"><i class="fa fa-envelope">
+         Web </i> </a>
+
+ </div>
+ <!--Program -->
+<div class="mydiv">
+ <div class="container">
+          <div>
+                 <marquee behavior="alternate" direction="left" scrollamount="5"  onmouseover="this.stop();"
+               onmouseout="this.start();" >
+           <img src="logo.png" width="178.6" height="180.2" align="left" alt="college logo">
+                     </br>
+                     <h1>DSCE INTERACTIVE MAP</h1>
+                </marquee>
+          </div>
+     </br>
+
+     
+	<center>
+
+
+         <img class="map" src="main.png" alt="DSCE College Model" usemap="#dsce_map" width="1024" height="683" align="center">
+    
+	     <map name="dsce_map">
+	 
+     
+     
+     <!--//hall of admission--> 
+     <a href="#demo">
+	   <area target="_blank" alt="" title="Hall of Admission"  onclick="myhall()" coords="620,545,621,487,620,457,631,454,641,449,637,412,621,409,621,371,682,371,690,460,685,510,674,529,648,540" shape="poly">
+	 </a>
+
+     <!--//library--> 
+     <a href="#demo">
+	 <area target="_blank" alt="" title="Library" onclick="mylib()" coords="451,622,308,616,289,564,297,507,359,505,370,510,377,534,411,531,449,530,460,539" shape="poly">
+     </a>
+
+     <!--//auditorium--> 
+     <a href="#demo">
+	  <area target="_blank" alt="" title="P.C Sagar Auditorium" onclick="myaudi()" coords="432,528,376,531,372,509,362,506,350,503,336,501,326,497,301,502,292,528,289,546,266,548,264,531,264,479,272,444,313,436,332,435,363,426,443,420,446,441,460,503,467,517" shape="poly">
+    </a>
+
+    <!--// nri hostel-->
+     <a href="#demo">
+	   <area target="_blank" alt="" title="NRI Hostel" onclick="mynri()"  coords="221,203,210,164,256,133,258,127,266,121,267,113,283,103,295,107,328,85,353,93,363,155,298,203,281,195,263,195,245,197" shape="poly">
+    </a>
+
+    <!--//parking--> 
+     <a href="#demo">
+	   <area target="_blank" alt="" title="Parking" onclick="mypark()" coords="229,665,169,664,137,647,125,615,117,602,122,594,125,581,130,573,137,568,143,567,140,561,154,468,248,467" shape="poly">
+    </a>
+
+    <!--//eee dept -->
+	 <a href="#demo">
+     <area target="_blank" alt="" title="EEE Dept" onclick="myeee()"  coords="244,403,188,403,184,391,210,304,232,301,263,303,265,317" shape="poly">
+    </a>
+     
+	<!--//automobile dept -->
+     <a href="#demo">
+     <area target="_blank" alt="Automobile Dept" title="Automobile Dept" onclick="myauto()" coords="77,581,39,582,12,581,10,499,65,506,63,526,95,545" shape="poly">
+      </a>
+	
+<!--//aero dept -->
+     <a href="#demo">
+    <area target="_blank" alt="Aeronautical Dept" title="Aeronautical Dept" onclick="myaero()"  coords="65,525,67,505,19,500,11,482,10,390,20,386,31,387,37,382,65,382,63,386,101,389,123,446,113,467,124,469,121,484,105,526" shape="poly">
+    </a>
+
+<!--//mech dept -->
+     <a href="#demo">
+    <area target="_blank" alt="Mechanical Dept" title="Mechanical Dept" onclick="mymech()" coords="240,461,242,425,234,406,167,403,162,410,136,408,145,384,184,311,141,310,126,330,111,330,102,335,72,365,63,384,104,390,124,445,129,454,165,456,187,465,215,466,215,466" shape="poly"></a>
+
+<!--//chemistry dept -->
+     <a href="#demo">
+    <area target="_blank" alt="Chemistry Dept" title="Chemistry Dept" onclick="mychem()"  coords="261,301,234,300,211,302,206,310,140,307,137,290,159,269,270,274,273,290,265,313" shape="poly"></a>
+   
+<!--//cd sagar -->
+     <a href="#demo">
+    <area target="_blank" alt="C.D Sagar Auditorium" title="C.D Sagar Auditorium"  onclick="mycd()" coords="200,271,191,238,211,205,229,203,237,198,253,196,269,195,287,197,298,205,306,217,316,262,296,281,273,290,269,272" shape="poly"></a>
+    
+<!--//playground/football -->
+    <a href="#demo">
+    <area target="_blank" alt="Playground" title="Playground" onclick="myfootball()"  coords="414,228,431,226,462,219,483,216,511,214,548,209,563,116,445,116" shape="poly"></a>
+   
+<!--//basketball -->
+     <a href="#demo">
+    <area target="_blank" alt="Basketball Court" title="Basketball Court" onclick="mybasketball()" coords="359,219,405,221,420,175,376,173" shape="poly"></a>
+
+<!--//tenniscourt -->
+     <a href="#demo">
+    <area target="_blank" alt="Tennis Court" title="Tennis Court" onclick="mytennis()" coords="377,172,420,174,433,126,389,122" shape="poly"></a>
+   
+<!--//PU -->
+     <a href="#demo">
+    <area target="_blank" alt="PU College" title="PU College"  onclick="mypu()" coords="401,119,416,124,435,114,557,113,561,96,567,79,565,68,573,70,573,56,513,43,494,42,478,46,398,84" shape="poly"></a>
+    
+<!--//iem dept --> <a href="#demo">
+    <area target="_blank" alt="IEM Dept" title="IEM Dept" onclick="myiem()" coords="287,403,298,405,299,397,321,396,338,337,332,321,311,318,297,319,288,360,283,362,274,393" shape="poly"></a>
+    
+<!--//businessblock -->
+    <area target="_blank" alt="Bussines Block" title="Bussines Block" onclick="mybblock()" coords="582,208,651,197,653,148,651,75,585,73,581,132,573,133,573,152,581,153" shape="poly">
+    
+<!--//arc.block -->
+     <a href="#demo">
+    <area target="_blank" alt="Architecture Block" title="Architecture Block" onclick="myarch()" coords="580,115,558,112,569,83,569,75,578,73,581,59,577,43,587,37,609,37,651,46,653,75,591,72,592,72,584,73,591,72" shape="poly"></a>
+    
+<!--//CSE dept --><a href="#demo">
+    <area target="_blank" alt="C.S Dept" title="C.S Dept" onclick="mycse()" coords="625,295,634,293,646,284,656,291,679,287,688,292,699,290,697,282,708,285,715,256,700,221,614,229,615,257,610,264" shape="poly">
+    </a>
+<!--heritage-->
+         <a href="#demo"> 
+      <area target="_blank" alt="" title="Heritage Block" onclick="myheritage()" coords="619,552,567,550,565,523,567,508,578,506,580,476,561,477,560,461,568,458,567,444,567,426,581,426,581,416,572,414,572,368,622,367" shape="poly" ></a>
+
+<!--//Amphitheatre dept -->
+     <a href="#demo">
+    <area target="_blank" alt="Ampi Theatre" title="Amphi Theatre" onclick="myamphi()" coords="635,295,632,302,645,309,650,322,661,318,673,313,685,306,689,295,670,295,657,293,645,286" shape="poly"></a>
+    
+<!--//ece dept -->
+     <a href="#demo">
+    <area target="_blank" alt="E.C Dept" title="E.C Dept" onclick="myece()" coords="735,238,715,210,720,163,870,143,893,175,874,178,852,180,833,180,834,197,814,200,811,229" shape="poly"></a>
+   
+<!--//dental block -->
+ <a href="#demo">
+    <area target="_blank" alt="Dental Block" title="Dental Block" onclick="mydental()" coords="701,435,749,441,781,445,790,398,788,327,767,323,766,293,729,289,726,353,717,354,713,377,705,377" shape="poly"></a>
+  
+<!--//sagar hospital -->
+     <a href="#demo">
+    <area target="_blank" alt="Sagar Hospital " title="Sagar Hospital "  onclick="myhospital()" coords="935,276,952,227,935,276,945,302,960,298,962,318,997,316,1016,262,1001,196,991,181,972,167,926,122,893,140,887,161,898,173,924,179,939,199,945,214,952,227,934,277,953,225,935,277,953,226,946,213,939,199,925,179,924,178,906,176,906,176,924,178,930,193,953,227,952,225,924,178,953,226,925,179,952,225,924,178,924,178,953,225,934,277" shape="poly"></a>
+    
+<!--//EI dept -->
+   <a href="#demo">
+    <area target="_blank" alt="E.I dept" title="E.I dept" onclick="myei()" coords="820,296,900,297,901,283,912,285,928,280,931,269,929,255,862,252,859,247,809,247,802,263,806,278,817,277" shape="poly"></a>
+ 
+ <!--//Rock Garden -->  
+  <a href="#demo">
+    <area target="_blank" alt="Rock Garden" title="Rock Garden" onclick="myrock()" coords="261,458,269,455,272,441,309,440,313,433,334,435,359,426,377,425,441,419,449,439,452,474,502,477,539,464,520,444,513,419,514,397,508,377,513,349,545,345,545,323,563,317,542,294,521,272,505,263,495,227,448,233,417,242,389,253,358,265,332,275,312,288,297,317,332,318,339,336,322,396,301,399,296,406,286,405,274,396" shape="poly"></a>
+
+<!--//Girls Hostel-->
+ <a href="#demo">
+    <area target="_blank" alt="Girl's Hostel" title="Girl's Hostel" onclick="mygirlhostel()" coords="516,264,505,224,513,218,631,205,639,225,612,228,614,258,613,259" shape="poly"></a>
+   
+<!--//LOTUS -->
+ <a href="#demo">
+    <area target="_blank" alt="Lotus Canteen" title="Lotus Canteen" onclick="mylotus()" coords="534,274,541,273,543,263,566,262,601,302,567,315" shape="poly"></a>
+    
+<!--//temple -->
+    <a href="#demo">
+    <area target="_blank" alt="Temple" title="Temple" onclick="mytemple()"  coords="512,377,512,348,569,347,569,391,515,391" shape="poly">
+    </a>
+
+<!--//vijaya bank dept -->
+     <a href="#demo">
+    <area target="_blank" alt="Vijaya Bank" title="Vijaya Bank" onclick="myothers()" coords="559,600,618,601,625,565,625,553,565,549" shape="poly"></a>
+
+   <!--//business school -->
+    <a href="#demo">
+    <area target="_blank" alt="Busineess School" title="Busineess School" onclick="mybschool()" coords="678,170,689,185,714,185,720,160,743,157,742,149,732,133,701,137,692,132,681,133,680,144" shape="poly"></a>
+   
+<!--//indian canteen -->
+ <a href="#demo">
+    <area target="_blank" alt="Indian Canteen" title="Indian Canteen" onclick="myicanteen()" coords="545,345,570,345,571,362,614,361,617,345,652,343,645,309,631,301,612,310,609,317,569,317,566,322,549,322" shape="poly"></a>
+    
+<!--//temple -->
+ <a href="#demo">
+    <area target="_blank" alt="Temple" title="Temple"  onclick="mytemple2()" coords="490,642,486,628,493,617,500,607,512,602,520,602,526,610,521,618,515,626,521,628,529,630,528,637,508,642" shape="poly"></a>
+    
+<!--//PU College -->
+ <a href="#demo">
+    <area target="_blank" alt="P.U College" title="P.U College"  onclick="mypu()" coords="653,48,653,74,653,112,661,127,661,163,677,160,676,145,678,132,684,130,694,128,709,121,714,67,677,50" shape="poly"></a>
+    
+<!--//hospital -->
+ <a href="#demo">
+    <area target="_blank" alt="Hospital" title="Hospital" onclick="myhospital();" coords="806,234,809,245,858,245,861,251,901,252,929,252,933,272,949,227,920,180,896,174,873,180,845,180,835,184,833,197,814,201,812,218,806,233" shape="poly">
+    
+<!--//civil dept -->
+    <area target="_blank" alt="Civil Dept" title="Civil Dept" onclick="mycivil()" coords="792,408,787,447,797,454,890,467,900,445,894,415,856,412,850,388,791,385,790,343,886,354,890,384,895,414" shape="poly"></a>
+    
+<!--//boys hostel -->
+ <a href="#demo">
+    <area target="_blank" alt="Boy's Hostel" title="Boy's Hostel" onclick="myihostel()"   coords="899,344,911,428,912,440,974,448,978,412,960,301,921,297,918,313,901,315,890,324" shape="poly"></a>
+   
+<!--//security room dept -->
+ <a href="#demo">
+    <area target="_blank" alt="Security Room" title="Security Room" onclick="mysec()"  coords="493,610,494,576,523,579,522,594,517,600" shape="poly">
+    </map>
+
+
+        <p id="demo"></p>
+    </center>
+ </div>
+
+
+    <!--Code for visitors count-->
+
+    <img id="p2" src="http://hitwebcounter.com/counter/counter.php?page=7046511&style=0005&nbdigits=6&type=page&initCount=0" title="Visits" Alt="Visits"   border="2" >
+    </a><br/>
+    <br/>
+    <br/>
+    <br/>
+</div>
+</body>
+</html>
+
+
+
+
+				
